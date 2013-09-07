@@ -28,7 +28,9 @@ The output for each scenario begins with a line containing "Scenario #i:", where
 Sample Input
 
 2
+
 2 2
+
 2 3
 
 
