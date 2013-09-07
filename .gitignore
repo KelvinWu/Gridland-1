@@ -1,13 +1,24 @@
-# Compiled Object files
-*.slo
-*.lo
-*.o
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
+#include<iostream>
+#include<math.h>
+#include <iomanip>
+using namespace std;
+
+int main(void){
+	int i,n,m,j;
+	float k;
+	cin >> i;
+	for(j=0;j<i;j++){
+		cin>>m>>n;
+		if(m%2==0||n%2==0) k=(float)m*n;
+		else k=m*n-1+sqrtf(2.0);
+		cout<<"Scenario#"<<j+1<<":"<<endl;
+		cout.setf(ios::showpoint);
+		cout.precision(2);
+		cout.setf(ios::fixed);
+		cout<<k<<endl;
+		cout<<endl;
+	}
+	return 0;
+}
